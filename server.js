@@ -5,10 +5,10 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 
-const PORT = 3015;
+const PORT = 3020;
 const animeFilePath = path.join(__dirname, 'anime.json');
 
 // Función para leer el archivo JSON
@@ -26,6 +26,11 @@ const readAnimeFile = (callback) => {
 const writeAnimeFile = (data, callback) => {
   fs.writeFile(animeFilePath, JSON.stringify(data, null, 2), 'utf8', callback);
 };
+
+// Ruta para servir el archivo index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 // Ruta para obtener los datos del anime
 app.get('/api/animes', (req, res) => {
