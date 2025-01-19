@@ -1,0 +1,115 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #201a44; 
+  font-family: 'Press Start 2P', cursive;
+}
+
+.divSuperior {
+  width: 100%;
+  height: 50vh; 
+  position: relative; 
+}
+
+.imgDeslizada {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgDeslizada img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Esto lo aprendi en tik tok*/
+}
+
+.adelanteBoton,
+.atrasBoton {
+  top: 50%; 
+  transform: translateY(-50%); 
+  position: absolute; 
+}
+
+.divIzquierdo {
+  display: flex;
+  height: 50vh; 
+}
+
+.descripcion, .divDerecho {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.descripcion {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.divDerecho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+  color: orangered;
+  flex-direction: column; 
+}
+
+.formularioContenedor {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 80%; 
+}
+
+form#formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-items: center; 
+}
+
+form#formulario label,
+form#formulario input {
+  padding-top: 6px;
+  width: 100%; 
+}
+
+form#formulario button {
+  width: auto; 
+  padding: 5px 10px; 
+  font-size: 12px; 
+}
+
+
+#agregarAnime , #modificarAnime , .guardar , .cancelar{
+  background-color: rgb(78, 78, 216);
+  font-size: 20px;
+}
+
+form#formulario input {
+  background-color: rgb(145, 226, 226); 
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

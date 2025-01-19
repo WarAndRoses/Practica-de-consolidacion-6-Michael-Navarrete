@@ -1,0 +1,32 @@
+{
+  "1": {
+    "nombre": "Akira",
+    "genero": "Ciencia Ficción",
+    "año": 1988,
+    "autor": "Katsuhiro Otomo"
+  },
+  "2": {
+    "nombre": "Dragon Ball",
+    "genero": "Acción",
+    "año": 1986,
+    "autor": "Akira Toriyama"
+  },
+  "3": {
+    "nombre": "Sailor Moon",
+    "genero": "Magical Girl",
+    "año": 1992,
+    "autor": "Naoko Takeuchi"
+  },
+  "4": {
+    "nombre": "Naruto",
+    "genero": "Acción",
+    "año": 2002,
+    "autor": "Masashi Kishimoto"
+  },
+  "5": {
+    "nombre": "Evangelion",
+    "genero": "Mecha",
+    "año": 1995,
+    "autor": "Hideaki Anno"
+  }
+}

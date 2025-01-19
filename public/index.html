@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consolidacion 4</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="divSuperior swiper-container">
+    <div class="divDeslizador swiper-wrapper">
+      <div class="imgDeslizada swiper-slide"><img src="img/Akira.jpg" alt="Image 1" data-id="1"></div>
+      <div class="imgDeslizada swiper-slide"><img src="img/Dragon ball.jpg" alt="Image 2" data-id="2"></div>
+      <div class="imgDeslizada swiper-slide"><img src="img/Sailor moon.jpg" alt="Image 3" data-id="3"></div>
+      <div class="imgDeslizada swiper-slide"><img src="img/Naruto.jpg" alt="Image 4" data-id="4"></div>
+      <div class="imgDeslizada swiper-slide"><img src="img/Evangelion.jpg" alt="Image 5" data-id="5"></div>
+    </div>
+    <div class="adelanteBoton swiper-button-next"></div>
+    <div class="atrasBoton swiper-button-prev"></div>
+    <div class="mostradorCambios swiper-pagination"></div>
+  </div>
+
+  <div class="divIzquierdo">
+    <div class="descripcion">
+      <h2>Imagenes Informativas de anime</h2>
+      <p>Cambia imagenes y pincha para obtener informacion</p>
+      <button id="agregarAnime">Agregar Nuevo Anime</button>
+      <button id="modificarAnime">Modificar Anime actual</button>
+      <div class="formularioContenedor">
+        <form id="formulario" style="display: none;">
+          <input type="hidden" id="animeId">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="genero">Género:</label>
+          <input type="text" id="genero" name="genero" required>
+          <label for="año">Año:</label>
+          <input type="text" id="año" name="año" required>
+          <label for="autor">Autor:</label>
+          <input type="text" id="autor" name="autor" required>
+          <button type="submit" class="guardar">Guardar</button>
+          <button type="button" id="cancelAnime" class="cancelar">Cancelar</button> <!-- Botón Cancelar -->
+        </form>
+      </div>
+    </div>
+    <div class="divDerecho">
+      Aqui se mostrara la informacion del anime seleccionado
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
